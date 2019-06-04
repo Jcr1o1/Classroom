@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Cheat Sheet</title>
+	
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<style>
+			html{
+				height: 100%;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+				background: black url("img/lightabstract.png") center center no-repeat;;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-repeat:repeat;
+				background-attachment:fixed;
+			}
+		</style>
+	</head>
+	<body>	
+		<div class="sticky">
+			<ul id="nav_bar">
+				<li><a class="active" href="#home">Home</a></li>
+				<li><a href="http://www.fox9.com/#news">News</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#about">About</a></li>
+			</ul>
+		</div>
+		
+
+		<!--Headings -->
+		<h1>Heading One</h1>
+		<div>
+			<a href="http://www.google.com/" onclick="alert('A-ha! An Event!');">Go to Gooole</a>
+		</div>
+		<h2>Heading Two</h2>
+		<h3>Heading Three</h3>
+		<h4>Heading Four</h4>
+		<h5>Heading Five</h5>
+		<h6>Heading Six</h6>
+
+		<!--Paragraph -->
+		
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut<strong> labore et dolore magna</strong> aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, <em>sunt in culpa qui officia deserunt mollit anim id est laborum.</em>
+			</p>
+			
+		<p id="para1">
+			<a href="http://google.com">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor <a href="http://google.com" target="_blank">incididunt</a> ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<!--List -->
+		<ul>
+			<li class="green">List Item1</li>
+			<li class="green">List Item2</li>
+			<li class="green">List Item3</li>
+			<li class="green">List Item4</li>
+		</ul>	
+		<ol>
+			<li>List Item1</li>
+			<li>List Item2</li>
+			<li>List Item3</li>
+			<li>List Item4</li>
+		</ol>
+
+		<!--Table -->
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Age</th>
+				</tr>
+				
+			</thead>
+			<tbody>
+				<tr>
+					<td>Brad Traversy</td>
+					<td>Brad@something.com</td>
+					<td>35</td>
+				</tr>
+				<tr>
+					<td>Carlos</td>
+					<td>Carlos@something.com</td>
+					<td>23</td>
+				</tr>
+				<tr>
+					<td>Jhon Doe</td>
+					<td>jdoe@somthing.com</td>
+					<td>45</td>
+				</tr>	
+			</tbody>
+				
+			</table>
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<!--Forms -->
+		<form action="process.php" method="POST">
+			<div>
+				<label>First Name</label>
+				<input type="text" name="firstName" placeholder="First Name">
+			</div>
+			<br>
+			<div>
+				<label>Last Name</label>
+				<input type="text" name="LastName" value="Last Name">
+			</div>
+			<br>
+			<div>
+				<label>Email</label>
+				<input type="email" name="email">
+			</div>
+			<br>
+			<div>
+				<label>Message</label>
+				<textarea name=message></textarea>
+			</div>
+			<br>
+			<div>
+				<label>Gendere</label>
+				<select name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+				
+			</div>
+			<br>
+			<div>
+				<label>Age</label>
+				<input type="number" name="age" value="21">
+			</div>
+			<br>
+			<div>
+				<label>Birthday</label>
+				<input type="date" name="birthday">
+			</div>
+			<br>
+			<input type="submit" name="submit" value="Submit">
+			
+		</form>
+		<br>
+		<!--Button -->
+		<button type="button" onclick="myFunction">Click Me</button>
+		<br>
+		<br>
+		<!--Images -->
+		<div class="gallery">
+			<img src="Img/minnesota twins.png">
+			<br>
+			<br>
+		</div>	
+		<!-- Quotations -->
+		<blockquote cite="http://traversymedia.com"> 
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</blockquote>
+		<br>
+		<br>
+		<div class="www">
+			<p>The <abbr title="World Wide Web">WWW</abbr> is asome</p>
+		</div>
+
+		<p class="htmlcrash"><cite>HTML crash course</cite> By Brad Traversy</p>
+		<footer>Footer</footer>
+
+
+		<div style="margin-top:500px"></div>	
+
+	</body>
+</html>
